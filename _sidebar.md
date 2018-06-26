@@ -1,4 +1,4 @@
-- [ 业务组件 ]
+- 业务组件
 	- [地址编辑 dui-address-edit](/zh-cn/address_edit)
     - [地址列表 dui-address-list](/zh-cn/address_list)
     - [省市区选择 dui-address-selector](/zh-cn/address_selector)
