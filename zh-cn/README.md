@@ -1,4 +1,4 @@
-# Dui-Weex
+# dui-weex
 
 
 ## 安装
