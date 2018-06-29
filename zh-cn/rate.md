@@ -1,4 +1,34 @@
 
+## 使用方法
+<img  src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-rate.gif" width="240"/>
+
+```vue
+<template>
+    <div>
+       <dui-rate :count="count" @change="change"></dui-rate>
+    </div>
+</template>
+
+<script>
+    import {duiRate} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiRate
+        },
+        data() {
+            return {
+                count:5
+            }
+        },
+        methods: {
+            change(e){
+                console.log(e)
+            }
+        }
+    }
+</script>
+
+```
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |
