@@ -21,19 +21,13 @@
         },
         methods: {
             addAddress(){
-                this.$notice.toast({
-                    message: '您点击了添加地址'
-                })
+				console.log('您点击了添加地址')
             },
             checkAddress(){
-                this.$notice.toast({
-                    message: '您选择了该地址'
-                })
+				console.log('您选择了该地址')
             },
             editAddress(){
-                this.$notice.toast({
-                    message: '您编辑了改地址'
-                })
+				console.log('您编辑了改地址')
             }
         }
     }
