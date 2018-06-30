@@ -1,4 +1,39 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-payinput.gif" width="240"/>
+```vue
+<template>
+    <div>
+        <dui-button text="打开" @click="openPayInput"></dui-button>
+        <dui-paynumber-keyboard :show="show" @close="close" @input="input"> </dui-paynumber-keyboard>
+    </div>
+</template>
 
+<script>
+    import {duiPaynumberKeyboard,duiButton} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiPaynumberKeyboard,duiButton
+        },
+        data() {
+            return {
+                show:false
+            }
+        },
+        methods: {
+            openPayInput(){
+                this.show=true
+            },
+            close(){
+                this.show=false
+            },
+            input(value){
+              console.log(value)
+            }
+        }
+    }
+</script>
+
+```
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |

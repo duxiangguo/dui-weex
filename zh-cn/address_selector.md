@@ -1,3 +1,41 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-area-selector.gif" width="240"/>
+```vue
+<template>
+    <div>
+        <dui-button :text="text" @click="openAreaSelector"></dui-button>
+        <dui-address-selector @checkedArea="checkedArea" :show="show" @close="close"></dui-address-selector>
+    </div>
+</template>
+
+<script>
+    import {duiAddressSelector,duiButton} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiAddressSelector,duiButton
+        },
+        data() {
+            return {
+                show:false,
+                text:'打开省市区选择'
+            }
+        },
+        methods: {
+            openAreaSelector(){
+                this.text='打开省市区选择';
+                this.show=true
+            },
+            checkedArea(value){
+                this.text=value[0].title+'-'+value[1].title+'-'+value[2].title;
+            },
+            close(){
+             this.show=false
+            }
+        }
+    }
+</script>
+```
+
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |
@@ -13,7 +51,7 @@
 ### 事件回调
 
 ```
-@selectArea="selectArea" 返回选择项的值
+@selectArea="selectArea" 没选择一项都会返回当前选择项的value
 ```
 
 ```

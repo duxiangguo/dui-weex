@@ -1,3 +1,48 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-filed.gif" width="240"/>
+```vue
+<template>
+    <div>
+        <div class="width750 height100 center background-color-gay">
+            <text>不可编辑</text>
+        </div>
+        <dui-field formType="text" label="姓名" content="张三" @change="touchClick"></dui-field>
+        <div class="width750 height100 center background-color-gay">
+            <text>带验证类型输入框</text>
+        </div>
+        <dui-field formType="input" :required="true"  requiredType="telphone"></dui-field>
+        <dui-field formType="input" label="身份证" placeholder="请输入省份证" :required="true"  requiredType="idCard"></dui-field>
+        <div class="width750 height100 center background-color-gay">
+            <text>验证码输入框</text>
+        </div>
+        <dui-field formType="sms" label="验证码" placeholder="请输入验证码" @getCode="getCode"></dui-field>
+        <div class="width750 height100 center background-color-gay">
+            <text>开关</text>
+        </div>
+        <dui-field formType="switch"  label="设为默认" @change="switchClick"></dui-field>
+    </div>
+</template>
+
+<script>
+    import {duiField} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiField
+        },
+        methods: {
+            touchClick(){
+				console.log('您点击了不可编辑输入框')
+            },
+            getCode(){
+				console.log('您点击了获取验证码')
+            },
+            switchClick(value){
+				console.log(value)
+            }
+        }
+    }
+</script>
+```
 
 ### 可配置参数
 
@@ -34,3 +79,4 @@
 ```
 @getCode="getCode"  监听发送验证码事件
 ```
+*

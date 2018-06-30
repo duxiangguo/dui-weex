@@ -1,5 +1,5 @@
 
-## 使用方法
+### 使用方法
 <img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-rate.gif" width="240"/>
 
 ```vue
@@ -33,13 +33,13 @@
 
 | Prop | Type | Required | Default | Description |
 |-------------|------------|--------|-----|-----|
-| value| `Number` |`N`| `0` |已评分数，支持v-model双向数据绑定
+| value| `Number` |`N`| `2` |已评分数，支持v-model双向数据绑定
 | count | `Number` |`N`| `5` | 评分的总分数|
 | color | `String` |`N`| `#ff2d4d` | 选中时的颜色|
-| size | `Number` |`N`| `55` | 图标的大小|
 | voidColor | `String` |`N`| `#ff2d4d` |未选中颜色|
-|disabledColor | `String` |`N`| `0` | 禁用选择的颜色|
 |disabled | `Boolean` |`N`| `false` | 是否禁用选择|
+|disabledColor | `String` |`N`| `0` | 禁用选择的颜色|
+| size | `Number` |`N`| `55` | 图标的大小|
 
 ### 事件回调
 

@@ -1,4 +1,31 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-row-setps.gif" width="240"/>
+```vue
+<template>
+    <div style="margin-top: 100px">
+        <dui-row-steps :value="value"></dui-row-steps>
+    </div>
+</template>
 
+<script>
+    import {duiRowSteps} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiRowSteps
+        },
+        data() {
+            return {
+                value:2
+            }
+        },
+        methods: {
+      
+        }
+    }
+</script>
+
+
+```
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |

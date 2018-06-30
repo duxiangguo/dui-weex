@@ -1,4 +1,46 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-number-keyboard.gif" width="240"/>
+```vue
+<template>
+    <div>
+        <dui-button text="打开default键盘" @click="openKeyboard('default')"></dui-button>
+        <dui-button text="打开custom键盘" @click="openKeyboard('custom')"></dui-button>
+        <dui-number-keyboard  :show="show" @delete="back" @close="close" @input="input" :theme="keyboardTheme" ></dui-number-keyboard>
+    </div>
+</template>
 
+<script>
+    import {duiNumberKeyboard,duiButton} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiNumberKeyboard,duiButton
+        },
+        data() {
+            return {
+                show:false,
+                keyboardTheme:''
+            }
+        },
+        methods: {
+            openKeyboard(value){
+                this.show=true;
+                this.keyboardTheme=value
+            },
+            close(){
+                this.show=false
+				console.log('关闭键盘')
+            },
+            input(value){
+				console.log(value)
+            },
+            back(){
+				console.log('您点击了回退按钮')
+            }
+        }
+    }
+</script>
+
+```
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |

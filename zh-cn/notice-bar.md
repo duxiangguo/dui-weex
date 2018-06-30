@@ -1,4 +1,36 @@
+### 使用方法
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-notice-bar.gif" width="240"/>
+```vue
+<template>
+    <div>
+        <dui-notice-bar :scrollable="scrollable"></dui-notice-bar>
+        <dui-button :text="text" @click="startRolling"></dui-button>
+    </div>
+</template>
 
+<script>
+    import {duiNoticeBar,duiButton} from  'dui-weex'
+    module.exports = {
+        components: {
+            duiNoticeBar,duiButton
+        },
+        data() {
+            return {
+                scrollable:false,
+                text:'切换为滚动模式'
+            }
+        },
+        methods: {
+            startRolling(){
+				console.log('切换滚动模式成功')
+                this.scrollable=true
+                this.text='当前为滚动模式'
+            }
+        }
+    }
+</script>
+
+```
 ### 可配置参数
 
 | Prop | Type | Required | Default | Description |
@@ -13,7 +45,7 @@
 |rightIcon | `String` |`N`| `&#xe646;` | 右侧文案|
 |rightItem | `Object` |`N`| `{color:'#ff6600',fontSize:45}` |右侧文案样式|
 |scrollable | `Boolean` |`N`| `false` | 是否滚动|
-|rollingLength | `Number` |`N`| `800` |滚动长度
+|rollingLength | `Number` |`N`| `800` |滚动长度|
 ### 事件回调
 
 
