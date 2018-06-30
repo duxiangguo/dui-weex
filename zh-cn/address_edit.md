@@ -39,7 +39,6 @@
 | city | `Object` |`N`| `[]` |市数据源|
 | area | `Object` |`N`| `[]` |区数据源|
 | tabItems | `Object` |`N`| `[{title: "请选择",value:''},{title: "",value:''},{title: "",value:''}]` |默认展示省市区|
-| currentTab | `Number` |`N`| `0` |选择省的时候默认展示省还是市或者是区|
 | data | `Object` |`N`| `{address:'请选择收件地区',addressId:'',consignee:'',telphone:'',dictAddress:'',Postcodes:'',isDefault:true}` |编辑时候展示的数据|
 ### 事件回调
 
