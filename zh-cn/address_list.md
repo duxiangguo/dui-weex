@@ -41,7 +41,7 @@
 | color | `String` |`N`| `#5da3f6` | 选中颜色|
 | voidColor | `String` |`N`| `#7c7c7c` | 未选中颜色|
 | showIndex | `Number` |`N`| `0` | 默认选中|
-| list | `Object` |`N`| `[{id:'',name:'张三',telphone:'17603666581',address:'黑龙江省哈尔滨市南岗区中兴大道109号'}]` | 数据源|
+| list | `Object` |`N`| `[{consignee:'',telphone:'',province:'',city:'',area:'',addressInfo:''}]` | 数据源|
 ### 事件回调
 
 
@@ -58,5 +58,5 @@
 ```
 
 ```
-注一：返回数据类型{id:'',name:'张三',telphone:'17603666581',address:'黑龙江省哈尔滨市南岗区中兴大道109号'}}
+注一：返回数据类型参考list参数
 ```
