@@ -1,6 +1,6 @@
 
 ### 使用方法
-<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-icon.png" width="240"/>
+<img   src="https://duxiangguo.github.io/dui-weex/zh-cn/image/dui-icon.gif" width="240"/>
 
 ```vue
 <template>
